@@ -38,10 +38,6 @@ class ShoppingCartPage
 
 	private
 
-	def table_value(line_item, column)
-		row = (line_item - 1) * LINES_PER_PUPPY
-	end
-
 	def cart_line_item(line_item)
    		@browser.table(index: 0)[row_for(line_item)]
    		cart_element[row][column].text
