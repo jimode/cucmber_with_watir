@@ -15,11 +15,11 @@ class ShoppingCartPage
 	cell(:cart_total, class: "total_cell")
 
 	def name_for_line_item(line_item)
-		cart_line_item(line_item)[NAME_COLUMN].text
+		table_value(line_item, NAME_COLUMN)
 	end
 
 	def subtotal_for_line_item(line_item)
-		cart_line_item(line_item)[SUBTOTAL_COLUMN].text
+		table_value(line_item, SUBTOTAL_COLUMN)
 	end
 
 	# def cart_total
@@ -38,9 +38,10 @@ class ShoppingCartPage
 
 	private
 
-	def cart_line_item(line_item)
-   		@browser.table(index: 0)[row_for(line_item)]
-   		cart_element[row][column].text
+
+ 	def table_value(line_item, column)
+ 		row = (line_item.to_i - 1) * LINES_PER_PUPPY
+ 		cart_element[row][column].text
  	end
 
 end
