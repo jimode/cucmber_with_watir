@@ -42,55 +42,47 @@
 
 # Scenario: Adopting two puppies
 Given(/^I am on the puppy adoption site$/) do
-  @browser.goto "http://puppies.herokuapp.com"
-  @home = HomePage.new(@browser)
+  visit(HomePage)
 end
 
 When(/^I click the first View Details button$/) do
-  # @browser.button(value: 'View Details', index: 0).click
-  @home.select_puppy_number 1
-  @details = DetailsPage.new(@browser)
+  on(HomePage).select_puppy_number 1
 end
 
 When(/^I click the Adopt Me button$/) do
-  @details.add_to_cart
-  @cart = ShoppingCartPage.new(@browser)
+  on(DetailsPage).add_to_cart
 end
 
 When(/^I click the Adopt Another Puppy button$/) do
-  @cart.continue_shopping
+  on(ShoppingCartPage).continue_shopping
 end
 
 When(/^I click the second View Details button$/) do
-  # @browser.button(value: 'View Details', index: 1).click
-  @home.select_puppy_number 2
-  @details = DetailsPage.new(@browser)
+  on(HomePage).select_puppy_number 2
 end
 
 When(/^I click the Complete the Adoption button$/) do
-  @cart.proceed_to_checkout
-  @checkout = CheckoutPage.new(@browser)
+  on(ShoppingCartPage).proceed_to_checkout
 end
 
 When(/^I enter "(.*?)" in the name field$/) do |name|
-  @browser.text_field(id: 'order_name').set(name)
-  @checkout.name = name
+  on(CheckoutPage).name = name
 end
 
 When(/^I enter "(.*?)" in the address field$/) do |address|
-  @checkout.address = address
+  on(CheckoutPage).address = address
 end
 
 When(/^I enter "(.*?)" in the email field$/) do |email|
-  @checkout.email = email
+  on(CheckoutPage).email = email
 end
 
 When(/^I select "(.*?)" from the pay with dropdown$/) do |pay_type|
-  @checkout.pay_type = pay_type
+  on(CheckoutPage).pay_type = pay_type
 end
 
 When(/^I click the Place Order button$/) do
-  @checkout.place_order
+  on(CheckoutPage).place_order
 end
 
 Then(/^I should see "(.*?)"$/) do |expected|
