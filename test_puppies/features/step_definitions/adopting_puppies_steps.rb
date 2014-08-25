@@ -50,41 +50,41 @@
 
 ### Scenario: Adopting a puppy using a table ###
 # ============================================== 
-Given(/^I am on the puppy adoption site$/) do
-  visit(HomePage)
-end
+# Given(/^I am on the puppy adoption site$/) do
+#   visit(HomePage)
+# end
 
-When(/^I click the View Details button for "(.*?)"$/) do |name|
-  on(HomePage).select_puppy name
-end
+# When(/^I click the View Details button for "(.*?)"$/) do |name|
+#   on(HomePage).select_puppy name
+# end
 
-When(/^I click the Adopt Me button$/) do
-  on(DetailsPage).add_to_cart
-end
+# When(/^I click the Adopt Me button$/) do
+#   on(DetailsPage).add_to_cart
+# end
 
-When(/^I click the Complete the Adoption button$/) do
-  on(ShoppingCartPage).proceed_to_checkout
-end
+# When(/^I click the Complete the Adoption button$/) do
+#   on(ShoppingCartPage).proceed_to_checkout
+# end
 
-When(/^I complete the adoption with:$/) do |table|
-  # table is a Cucumber::Ast::Table
-  # {"name"=>"Cheezy", "address"=>"123 Main Street", "email"=>"cheezy@example.com", "pay_type"=>"Check"}
-  # on(CheckoutPage) do |page|
-  #   page.name = data['name']
-  #   page.address = data['address']
-  #   page.email = data['email']
-  #   page.pay_type = data['pay_type']
-  #   page.place_order
-  # end
-  on(CheckoutPage).checkout(table.hashes.first)
-end
+# When(/^I complete the adoption with:$/) do |table|
+#   # table is a Cucumber::Ast::Table
+#   # {"name"=>"Cheezy", "address"=>"123 Main Street", "email"=>"cheezy@example.com", "pay_type"=>"Check"}
+#   # on(CheckoutPage) do |page|
+#   #   page.name = data['name']
+#   #   page.address = data['address']
+#   #   page.email = data['email']
+#   #   page.pay_type = data['pay_type']
+#   #   page.place_order
+#   # end
+#   on(CheckoutPage).checkout(table.hashes.first)
+# end
 
-Then(/^I should see "(.*?)"$/) do |expected|
-  @current_page.text.should include expected
-end
+# Then(/^I should see "(.*?)"$/) do |expected|
+#   @current_page.text.should include expected
+# end
 
 ### Scenario: Adopting a puppy using partial default data ###
-# ------------------------------------------------------------
+# ===========================================================
 # Given(/^I am on the puppy adoption site$/) do
 #   visit(HomePage)
 # end
@@ -136,8 +136,26 @@ end
 # end
 
 
+# ### Scenario: Thank you message should be displayed ###
+# ========================================================
+Given(/^I am on the puppy adoption site$/) do
+  visit(HomePage)
+end
+
+When(/^I complete the adoption of a puppy$/) do
+  on(HomePage).select_puppy
+  on(DetailsPage).add_to_cart
+  on(ShoppingCartPage).proceed_to_checkout
+  on(CheckoutPage).checkout
+end
+
+Then(/^I should see "(.*?)"$/) do |expected|
+  @current_page.text.should include expected
+end
+
+
 # ### Scenario: Adopting two puppies ###
-# ---------------------------------------
+# ======================================
 # Given(/^I am on the puppy adoption site$/) do
 #   visit(HomePage)
 # end
