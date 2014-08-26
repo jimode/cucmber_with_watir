@@ -138,20 +138,20 @@
 
 # ### Scenario: Thank you message should be displayed ###
 # ========================================================
-Given(/^I am on the puppy adoption site$/) do
-  visit(HomePage)
-end
+# Given(/^I am on the puppy adoption site$/) do
+#   visit(HomePage)
+# end
 
-When(/^I complete the adoption of a puppy$/) do
-  on(HomePage).select_puppy
-  on(DetailsPage).add_to_cart
-  on(ShoppingCartPage).proceed_to_checkout
-  on(CheckoutPage).checkout
-end
+# When(/^I complete the adoption of a puppy$/) do
+#   on(HomePage).select_puppy
+#   on(DetailsPage).add_to_cart
+#   on(ShoppingCartPage).proceed_to_checkout
+#   on(CheckoutPage).checkout
+# end
 
-Then(/^I should see "(.*?)"$/) do |expected|
-  @current_page.text.should include expected
-end
+# Then(/^I should see "(.*?)"$/) do |expected|
+#   @current_page.text.should include expected
+# end
 
 
 # ### Scenario: Adopting two puppies ###
@@ -229,4 +229,21 @@ end
 # Then(/^I should see "(.*?)" as the cart total$/) do |total|
 #   on(ShoppingCartPage).cart_total.should == total
 # end
+
+# ### Scenario: Name is a required field ###
+# ===========================================
+Given(/^I am on the puppy adoption site$/) do
+  visit(HomePage)
+end
+
+When(/^I checkout leaving the name field blank$/) do
+  on(HomePage).select_puppy
+  on(DetailsPage).add_to_cart
+  on(ShoppingCartPage).proceed_to_checkout
+  on(CheckoutPage).checkout('name' => '')
+end
+
+Then(/^I should see the error message "(.*?)"$/) do |msg|
+  @current_page.should have_error_message msg
+end
 
