@@ -47,9 +47,9 @@ Feature: Adopting puppies
 	# 	And I complete the adoption
 	# 	Then I should see "Thank you for adopting a puppy!"
 
-	# Scenario: Thank you message should be displayed
-	# 	When I complete the adoption of a puppy
-	# 	Then I should see "Thank you for adopting a puppy!"
+	Scenario: Thank you message should be displayed
+		When I complete the adoption of a puppy
+		Then I should see "Thank you for adopting a puppy!"
 
 	# Scenario: Adopting two puppies
 	# 	When I click the first View Details button for "Brook"
@@ -87,3 +87,8 @@ Feature: Adopting puppies
 	Scenario: Name is a required field
 		When I checkout leaving the name field blank
 		Then I should see the error message "Name can't be blank"
+
+	Scenario: Verify message when adoption is processed
+		Given I have a pending adoption for "Tom Jones"
+		When I process that adoption
+		Then I should see "Please thank Tom Jones for the order!"

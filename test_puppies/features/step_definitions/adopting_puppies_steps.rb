@@ -1,7 +1,7 @@
 ### Scenario: Adopting one puppy ###
-# Given(/^I am on the puppy adoption site$/) do
-#   visit(HomePage)
-# end
+Given(/^I am on the puppy adoption site$/) do
+  visit(HomePage)
+end
 
 # When(/^I click the View Details button for "(.*?)"$/) do |name|
 # # @browser.button(value: 'View Details', index: 0).click   
@@ -48,12 +48,8 @@
 #   @current_page.text.should include expected
 # end
 
-### Scenario: Adopting a puppy using a table ###
+## Scenario: Adopting a puppy using a table ###
 # ============================================== 
-# Given(/^I am on the puppy adoption site$/) do
-#   visit(HomePage)
-# end
-
 # When(/^I click the View Details button for "(.*?)"$/) do |name|
 #   on(HomePage).select_puppy name
 # end
@@ -136,22 +132,18 @@
 # end
 
 
-# ### Scenario: Thank you message should be displayed ###
+### Scenario: Thank you message should be displayed ###
 # ========================================================
-# Given(/^I am on the puppy adoption site$/) do
-#   visit(HomePage)
-# end
+When(/^I complete the adoption of a puppy$/) do
+  on(HomePage).select_puppy
+  on(DetailsPage).add_to_cart
+  on(ShoppingCartPage).proceed_to_checkout
+  on(CheckoutPage).checkout
+end
 
-# When(/^I complete the adoption of a puppy$/) do
-#   on(HomePage).select_puppy
-#   on(DetailsPage).add_to_cart
-#   on(ShoppingCartPage).proceed_to_checkout
-#   on(CheckoutPage).checkout
-# end
-
-# Then(/^I should see "(.*?)"$/) do |expected|
-#   @current_page.text.should include expected
-# end
+Then(/^I should see "(.*?)"$/) do |expected|
+  @current_page.text.should include expected
+end
 
 
 # ### Scenario: Adopting two puppies ###
@@ -232,10 +224,6 @@
 
 # ### Scenario: Name is a required field ###
 # ===========================================
-Given(/^I am on the puppy adoption site$/) do
-  visit(HomePage)
-end
-
 When(/^I checkout leaving the name field blank$/) do
   on(HomePage).select_puppy
   on(DetailsPage).add_to_cart
@@ -246,4 +234,24 @@ end
 Then(/^I should see the error message "(.*?)"$/) do |msg|
   @current_page.should have_error_message msg
 end
+
+# ### Scenario: Verify message when adoption is processed ###
+# ===========================================================
+Given(/^I have a pending adoption for "(.*?)"$/) do |name|
+  on(HomePage).select_puppy
+  on(DetailsPage).add_to_cart
+  on(ShoppingCartPage).proceed_to_checkout
+  on(CheckoutPage).checkout('name' => name)
+end
+
+When(/^I process that adoption$/) do
+  visit(LandingPage)
+  on(LoginPage).login_to_system
+  on(LandingPage).adoptions
+  on(ProcessPuppyPage).process_first_puppy
+end
+
+# Then(/^I should see "(.*?)"$/) do |arg1|
+#   pending # express the regexp above with the code you wish you had
+# end
 
