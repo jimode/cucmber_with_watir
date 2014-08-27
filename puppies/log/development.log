@@ -1,0 +1,371 @@
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-24 09:54:33 -0400
+Processing by AgencyController#index as HTML
+  [1m[36mPuppy Load (0.3ms)[0m  [1mSELECT "puppies".* FROM "puppies" ORDER BY name LIMIT 4 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "puppies" 
+  Rendered agency/index.html.erb within layouts/application (22.9ms)
+Compiled form.css  (1ms)  (pid 88992)
+Compiled layout.css  (3ms)  (pid 88992)
+Compiled puppies.css  (0ms)  (pid 88992)
+Compiled scaffold.css  (0ms)  (pid 88992)
+Compiled stylesheet.css  (30ms)  (pid 88992)
+Compiled application.css  (51ms)  (pid 88992)
+Compiled jquery.js  (2ms)  (pid 88992)
+Compiled jquery_ujs.js  (0ms)  (pid 88992)
+Compiled adoptions.js  (0ms)  (pid 88992)
+Compiled application.js  (23ms)  (pid 88992)
+Completed 200 OK in 170ms (Views: 161.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /application.css - 200 OK (8ms)
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /form.css - 200 OK (1ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /layout.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /scaffold.css - 200 OK (2ms)
+
+
+Started GET "/assets/puppies.css?body=1" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /puppies.css - 200 OK (1ms)
+
+
+Started GET "/assets/stylesheet.css?body=1" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /stylesheet.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/adoptions.js?body=1" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /adoptions.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /application.js - 200 OK (7ms)
+
+
+Started GET "/assets/puppies.css" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /puppies.css - 200 OK (3ms)
+
+
+Started GET "/assets/layout.css" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /layout.css - 200 OK (3ms)
+
+
+Started GET "/assets/form.css" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /form.css - 200 OK (5ms)
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /bg.jpg - 200 OK (5ms)
+
+
+Started GET "/assets/bg_top.jpg" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /bg_top.jpg - 200 OK (4ms)
+
+
+Started GET "/assets/search.jpg" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /search.jpg - 200 OK (7ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /logo.png - 200 OK (6ms)
+
+
+Started GET "/assets/contact.jpg" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /contact.jpg - 200 OK (4ms)
+
+
+Started GET "/assets/sb_top.jpg" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /sb_top.jpg - 200 OK (5ms)
+
+
+Started GET "/assets/intro.jpg" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /intro.jpg - 200 OK (9ms)
+
+
+Started GET "/assets/Brook.jpg" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /Brook.jpg - 200 OK (3ms)
+
+
+Started GET "/assets/Hannah.jpg" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /Hannah.jpg - 200 OK (3ms)
+
+
+Started GET "/assets/ruby_sue.jpg" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /ruby_sue.jpg - 200 OK (6ms)
+
+
+Started GET "/assets/MaggieMae.jpg" for 127.0.0.1 at 2012-07-24 09:54:34 -0400
+Served asset /MaggieMae.jpg - 200 OK (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-25 12:57:57 -0400
+Processing by AgencyController#index as HTML
+  [1m[36mPuppy Load (0.3ms)[0m  [1mSELECT "puppies".* FROM "puppies" ORDER BY name LIMIT 4 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "puppies" 
+  Rendered agency/index.html.erb within layouts/application (26.5ms)
+Compiled form.css  (1ms)  (pid 90904)
+Compiled layout.css  (3ms)  (pid 90904)
+Compiled puppies.css  (0ms)  (pid 90904)
+Compiled scaffold.css  (0ms)  (pid 90904)
+Compiled stylesheet.css  (3ms)  (pid 90904)
+Compiled application.css  (81ms)  (pid 90904)
+Compiled jquery.js  (32ms)  (pid 90904)
+Compiled jquery_ujs.js  (0ms)  (pid 90904)
+Compiled adoptions.js  (0ms)  (pid 90904)
+Compiled application.js  (67ms)  (pid 90904)
+Completed 200 OK in 266ms (Views: 257.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-25 12:57:57 -0400
+Served asset /application.css - 200 OK (37ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2012-07-25 12:57:57 -0400
+Served asset /layout.css - 200 OK (3ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-07-25 12:57:57 -0400
+Served asset /scaffold.css - 200 OK (1ms)
+
+
+Started GET "/assets/puppies.css?body=1" for 127.0.0.1 at 2012-07-25 12:57:57 -0400
+Served asset /puppies.css - 200 OK (1ms)
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2012-07-25 12:57:57 -0400
+Served asset /form.css - 200 OK (2ms)
+
+
+Started GET "/assets/stylesheet.css?body=1" for 127.0.0.1 at 2012-07-25 12:57:57 -0400
+Served asset /stylesheet.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-25 12:57:57 -0400
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-25 12:57:57 -0400
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-25 12:57:57 -0400
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/assets/adoptions.js?body=1" for 127.0.0.1 at 2012-07-25 12:57:57 -0400
+Served asset /adoptions.js - 200 OK (1ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-07-25 12:57:57 -0400
+Served asset /logo.png - 200 OK (8ms)
+
+
+Started GET "/assets/contact.jpg" for 127.0.0.1 at 2012-07-25 12:57:57 -0400
+Served asset /contact.jpg - 200 OK (9ms)
+
+
+Started GET "/assets/Brook.jpg" for 127.0.0.1 at 2012-07-25 12:57:57 -0400
+Served asset /Brook.jpg - 200 OK (42ms)
+
+
+Started GET "/assets/layout.css" for 127.0.0.1 at 2012-07-25 12:57:57 -0400
+Served asset /layout.css - 200 OK (8ms)
+
+
+Started GET "/assets/form.css" for 127.0.0.1 at 2012-07-25 12:57:57 -0400
+Served asset /form.css - 200 OK (6ms)
+
+
+Started GET "/assets/puppies.css" for 127.0.0.1 at 2012-07-25 12:57:57 -0400
+Served asset /puppies.css - 200 OK (6ms)
+
+
+Started GET "/assets/Hannah.jpg" for 127.0.0.1 at 2012-07-25 12:57:57 -0400
+Served asset /Hannah.jpg - 200 OK (12ms)
+
+
+Started GET "/assets/MaggieMae.jpg" for 127.0.0.1 at 2012-07-25 12:57:58 -0400
+Served asset /MaggieMae.jpg - 200 OK (9ms)
+
+
+Started GET "/assets/ruby_sue.jpg" for 127.0.0.1 at 2012-07-25 12:57:58 -0400
+Served asset /ruby_sue.jpg - 200 OK (8ms)
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2012-07-25 12:57:58 -0400
+Served asset /bg.jpg - 200 OK (9ms)
+
+
+Started GET "/assets/bg_top.jpg" for 127.0.0.1 at 2012-07-25 12:57:58 -0400
+Served asset /bg_top.jpg - 200 OK (12ms)
+
+
+Started GET "/assets/search.jpg" for 127.0.0.1 at 2012-07-25 12:57:58 -0400
+Served asset /search.jpg - 200 OK (9ms)
+
+
+Started GET "/assets/intro.jpg" for 127.0.0.1 at 2012-07-25 12:57:58 -0400
+Served asset /intro.jpg - 200 OK (7ms)
+
+
+Started GET "/assets/sb_top.jpg" for 127.0.0.1 at 2012-07-25 12:57:58 -0400
+Served asset /sb_top.jpg - 200 OK (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-27 15:56:28 +0100
+Processing by AgencyController#index as HTML
+  [1m[36mPuppy Load (0.9ms)[0m  [1mSELECT "puppies".* FROM "puppies" ORDER BY name LIMIT 4 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "puppies" 
+  Rendered agency/index.html.erb within layouts/application (32.2ms)
+Compiled application.css  (0ms)  (pid 1279)
+Compiled application.js  (0ms)  (pid 1279)
+Completed 200 OK in 90ms (Views: 73.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-27 15:56:28 +0100
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-27 15:56:28 +0100
+Served asset /application.js - 200 OK (2ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-08-27 15:56:28 +0100
+Served asset /logo.png - 200 OK (27ms)
+
+
+Started GET "/assets/contact.jpg" for 127.0.0.1 at 2014-08-27 15:56:28 +0100
+Served asset /contact.jpg - 200 OK (7ms)
+
+
+Started GET "/assets/Brook.jpg" for 127.0.0.1 at 2014-08-27 15:56:28 +0100
+Served asset /Brook.jpg - 200 OK (8ms)
+
+
+Started GET "/assets/Hannah.jpg" for 127.0.0.1 at 2014-08-27 15:56:28 +0100
+Served asset /Hannah.jpg - 200 OK (12ms)
+
+
+Started GET "/assets/ruby_sue.jpg" for 127.0.0.1 at 2014-08-27 15:56:28 +0100
+Served asset /ruby_sue.jpg - 200 OK (67ms)
+
+
+Started GET "/assets/MaggieMae.jpg" for 127.0.0.1 at 2014-08-27 15:56:29 +0100
+Served asset /MaggieMae.jpg - 200 OK (13ms)
+
+
+Started GET "/puppies/4" for 127.0.0.1 at 2014-08-27 15:57:15 +0100
+Processing by PuppiesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPuppy Load (0.2ms)[0m  [1mSELECT "puppies".* FROM "puppies" WHERE "puppies"."id" = ? ORDER BY name LIMIT 1[0m  [["id", "4"]]
+  Rendered puppies/show.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 29ms (Views: 26.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/adoptions?puppy_id=4" for 127.0.0.1 at 2014-08-27 16:00:59 +0100
+Processing by AdoptionsController#create as HTML
+  Parameters: {"authenticity_token"=>"TgFwRDDAYzG9Gfoewh4bXR5pVZB2MnfjFFn9BIXjL6I=", "puppy_id"=>"4"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (8.6ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Wed, 27 Aug 2014 15:00:59 UTC +00:00], ["updated_at", Wed, 27 Aug 2014 15:00:59 UTC +00:00]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mPuppy Load (0.1ms)[0m  [1mSELECT "puppies".* FROM "puppies" WHERE "puppies"."id" = ? ORDER BY name LIMIT 1[0m  [["id", "4"]]
+  [1m[35mAdoption Load (4.4ms)[0m  SELECT "adoptions".* FROM "adoptions" WHERE "adoptions"."cart_id" = 10 AND "adoptions"."puppy_id" = 4 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "adoptions" ("cart_id", "created_at", "delivered_on", "order_id", "puppy_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["cart_id", 10], ["created_at", Wed, 27 Aug 2014 15:00:59 UTC +00:00], ["delivered_on", nil], ["order_id", nil], ["puppy_id", 4], ["quantity", 1], ["updated_at", Wed, 27 Aug 2014 15:00:59 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 10 LIMIT 1
+Redirected to http://localhost:3000/carts/10
+Completed 302 Found in 81ms (ActiveRecord: 17.3ms)
+
+
+Started GET "/carts/10" for 127.0.0.1 at 2014-08-27 16:00:59 +0100
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  [1m[35mAdoption Load (0.2ms)[0m  SELECT "adoptions".* FROM "adoptions" WHERE "adoptions"."cart_id" = 10
+  [1m[36mPuppy Load (0.1ms)[0m  [1mSELECT "puppies".* FROM "puppies" WHERE "puppies"."id" = 4 ORDER BY name LIMIT 1[0m
+  Rendered adoptions/_adoption.html.erb (3.0ms)
+  Rendered carts/show.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/carts/10" for 127.0.0.1 at 2014-08-27 16:02:54 +0100
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  [1m[35mAdoption Load (0.1ms)[0m  SELECT "adoptions".* FROM "adoptions" WHERE "adoptions"."cart_id" = 10
+  [1m[36mPuppy Load (0.1ms)[0m  [1mSELECT "puppies".* FROM "puppies" WHERE "puppies"."id" = 4 ORDER BY name LIMIT 1[0m
+  Rendered adoptions/_adoption.html.erb (22.8ms)
+  Rendered carts/show.html.erb within layouts/application (54.1ms)
+Completed 200 OK in 79ms (Views: 66.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-08-27 16:02:54 +0100
+Served asset /logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-27 16:02:54 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/contact.jpg" for 127.0.0.1 at 2014-08-27 16:02:54 +0100
+Served asset /contact.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-27 16:02:54 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/Brook.jpg" for 127.0.0.1 at 2014-08-27 16:02:54 +0100
+Served asset /Brook.jpg - 304 Not Modified (1ms)
+  [1m[36m (10.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  DROP TABLE "adoptions"
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "adoptions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "puppy_id" integer, "cart_id" integer, "created_at" datetime, "updated_at" datetime, "quantity" integer DEFAULT 1, "order_id" integer, "delivered_on" datetime) [0m
+  [1m[35m (1.5ms)[0m  DROP TABLE "carts"
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "carts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.6ms)[0m  DROP TABLE "orders"
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address" text, "email" varchar(255), "pay_type" varchar(255), "created_at" datetime, "updated_at" datetime, "has_children" boolean, "has_other_pets" boolean, "other_pets_description" varchar(255)) [0m
+  [1m[35m (1.2ms)[0m  DROP TABLE "puppies"
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "puppies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "breed" varchar(255), "description" varchar(255), "gender" varchar(255), "image_url" varchar(255), "fees" decimal(8,2), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.7ms)[0m  DROP TABLE "users"
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "hashed_password" varchar(255), "salt" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "adoptions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "puppy_id" integer, "cart_id" integer, "created_at" datetime, "updated_at" datetime, "quantity" integer DEFAULT 1, "order_id" integer, "delivered_on" datetime) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "carts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address" text, "email" varchar(255), "pay_type" varchar(255), "created_at" datetime, "updated_at" datetime, "has_children" boolean, "has_other_pets" boolean, "other_pets_description" varchar(255)) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "puppies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "breed" varchar(255), "description" varchar(255), "gender" varchar(255), "image_url" varchar(255), "fees" decimal(8,2), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "hashed_password" varchar(255), "salt" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20110910210004')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20101017133235')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20101017213458')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20101017223008')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20101018100440')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20101018110302')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20101128125809')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20101128125854')[0m
+  [1m[35m (3.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20101128180606')
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20110430130502')[0m
