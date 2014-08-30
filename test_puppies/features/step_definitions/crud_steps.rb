@@ -53,9 +53,12 @@ When(/^I delete that order$/) do
   order.delete
 end
 
-
-
-
+# Scenario: Delivered on date should be set when a puppy is processed
+# ===================================================================
+Then(/^the adoption delivered on date should be set to the current time$/) do
+  adoption = Adoption.first
+  adoption.delivered_on.should be_on_or_near_the_time Time.now
+end
 
 
 
