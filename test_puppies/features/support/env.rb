@@ -22,4 +22,11 @@ PageObject::PageFactory.routes = {
 # end
 
 # DataMagic.add_translator(Account)
+
+# The following can be used to set the default times
+# PageObject.default_page_wait = 10
+# PageObject.default_element_wait = 2
+
+PageObject.javascript_framework = :jquery
+
 World(PageObject::PageFactory)
